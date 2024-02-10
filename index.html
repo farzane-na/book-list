@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./icon/book-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Kooklist</title>
+</head>
+
+<body class="d-flex">
+    <div class="container d-flex">
+        <div class="wrapper d-flex">
+            <div class="wrapper__title d-flex">
+                <span class="wrapper__book-icon"><img src="./icon/book-icon.png" alt="book icon"></span>
+                <h1>Farzane Js <span class="color">BookList</span></h1>
+            </div>
+            <div class="wrapper__input">
+                <div class="wrapper__title-book">
+                    <label>Title</label>
+                    <input type="text" class="input name-input">
+                </div>
+                <div class="wrapper__author-book">
+                    <label>Author</label>
+                    <input type="text" class="input author-input">
+                </div>
+                <div class="wrapper__year-book">
+                    <label>Year</label>
+                    <input type="text" class="input year-input">
+                </div>
+                <button class="wrapper__add-book d-flex">Add Book</button>
+            </div>
+            <table class="wrapper__book-list d-flex">
+                <tr class="row first-row d-flex">
+                    <td class="column d-flex">Title</td>
+                    <td class="column d-flex">Author</td>
+                    <td class="column d-flex">Year</td>
+                </tr>
+            </table>
+            <table class="wrapper__book-list">
+                <tbody class="booksList">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

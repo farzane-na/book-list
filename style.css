@@ -1,0 +1,109 @@
+:root{
+    --orange:#F49C12;
+    --gray:#d7dce0;
+    --bue:#B1C5D7;
+}
+@font-face {
+    font-family: "Rubik-Medium";
+    src: url("./font/Rubik-Medium.ttf") format("TrueType");
+}
+@font-face{
+    font-family: "Estedad-Medium";
+    src: url("./font/Estedad-Medium.ttf") format("TrueType");
+}
+html,
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+body{
+    background-color: #FFFE;
+    font-family: "Estedad-Medium" , "Rubik-Medium";
+    justify-content: center;
+}
+.container{
+    justify-content: center;
+    width: 60rem;
+    margin-top: 3rem;
+}
+.wrapper{
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #fff;
+    width: 100%;
+}
+.wrapper__title{
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.wrapper__book-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.color{
+    color: var(--orange);
+}
+.input{
+    width: 100%;
+    border:1px solid gainsboro;
+    outline: inherit;
+    padding: 0.3rem;
+    margin-bottom: 0.7rem;
+}
+input:focus{
+    box-shadow: 0px 0px 15px var(--bue);
+}
+.wrapper__input{
+    width: 100%;
+}
+.wrapper__add-book{
+    width: 100%;
+    justify-content: center;
+    padding: 0.7rem;
+    border-radius: 0.4rem;
+    color: #fff;
+    background-color: var(--orange);
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0.5rem 0 2rem;
+}
+.wrapper__book-list{
+    width: 100%;
+    flex-direction: column;
+}
+tbody{
+    width: 100%;
+}
+.rows{
+    justify-content: space-around;
+    width: 100%;
+    padding: 0.4rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 0px 0px 10px var(--gray);
+    border-radius: 0.4rem;
+    background-color: var(--gray);
+}
+.first-row{
+    justify-content: space-around;
+    width: 100%;
+    padding: 0.4rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 0px 0px 10px var(--gray);
+    border-radius: 0.4rem;
+    background-color: var(--gray);
+    background-color: #fff;
+}
+.column{
+    justify-content: center;
+}
