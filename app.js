@@ -10,13 +10,13 @@ let booksArray=[];
 /////////// Functions ///////////
 
 function addBook(){
-    let newcolumn={
-        id:booksArray.length+1,
-        title:bookName.value,
-        author:bookAuthor.value,
-        year:bookYear.value
-    };
     if(bookName.value && bookAuthor.value && bookYear){
+        let newcolumn={
+            id:booksArray.length+1,
+            title:bookName.value,
+            author:bookAuthor.value,
+            year:bookYear.value
+        };
         booksArray.push(newcolumn);
         setLocalStorage(booksArray);
         bookGenerator(booksArray);
